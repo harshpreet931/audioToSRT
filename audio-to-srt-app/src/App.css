@@ -1,0 +1,381 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
+  color: #1a1a1a;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  background: #fafafa;
+}
+
+/* Header */
+.app-header {
+  padding: 24px 32px;
+  border-bottom: 1px solid #e5e5e5;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.app-header h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: -0.01em;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+/* Settings Panel */
+.settings-panel {
+  padding: 16px 32px;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 56px;
+}
+
+.setting-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.setting-group label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.setting-group select,
+.setting-group input {
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  color: #1a1a1a;
+  font-size: 13px;
+  transition: all 0.15s ease;
+  min-width: 80px;
+}
+
+.setting-group select:focus,
+.setting-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.setting-group select:hover,
+.setting-group input:hover {
+  border-color: #9ca3af;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+/* Drop Zone */
+.drop-zone {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: white;
+  position: relative;
+}
+
+.drop-zone:hover {
+  border-color: #9ca3af;
+  background: #f9fafb;
+}
+
+.drop-zone.dragging {
+  border-color: #2563eb;
+  background: #eff6ff;
+  border-style: solid;
+}
+
+.drop-content {
+  text-align: center;
+  pointer-events: none;
+}
+
+.drop-icon {
+  font-size: 48px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.drop-zone h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.drop-zone p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.browse-button {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  pointer-events: auto;
+}
+
+.browse-button:hover {
+  background: #404040;
+}
+
+/* Jobs Section */
+.jobs-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e5e5e5;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.jobs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: 1px solid #f3f4f6;
+  background: #fafafa;
+}
+
+.jobs-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.clear-button {
+  background: transparent;
+  color: #6b7280;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.clear-button:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.jobs-list {
+  padding: 0;
+}
+
+.job-item {
+  background: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #f3f4f6;
+  transition: all 0.15s ease;
+}
+
+.job-item:hover {
+  background: #fafafa;
+}
+
+.job-item:last-child {
+  border-bottom: none;
+}
+
+.job-info {
+  flex: 1;
+}
+
+.job-name {
+  font-weight: 500;
+  font-size: 13px;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.job-progress {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.job-error {
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.job-output {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #059669;
+}
+
+.reveal-button {
+  background: transparent;
+  color: #6b7280;
+  border: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.reveal-button:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.job-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.status-icon {
+  font-size: 14px;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #f3f4f6;
+  border-top: 2px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Empty state message */
+.empty-state {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 16px 20px;
+  }
+  
+  .settings-panel {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .drop-zone {
+    height: 240px;
+  }
+  
+  .jobs-header {
+    padding: 12px 20px;
+  }
+  
+  .job-item {
+    padding: 12px 20px;
+  }
+}

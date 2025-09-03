@@ -66,10 +66,10 @@ def batch_convert(input_dir, output_dir=None, model_size="base", max_chars_per_l
             successful += 1
             
         except Exception as e:
-            print(f"❌ Failed to process {mp3_file.name}: {e}")
+            print(f"Failed to process {mp3_file.name}: {e}")
             failed += 1
     
-    print("\n✅ Batch processing complete!")
+    print("\nBatch processing complete!")
     print(f"Successful: {successful}")
     print(f"Failed: {failed}")
 
@@ -100,7 +100,7 @@ def main():
         )
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         sys.exit(1)
 
 
