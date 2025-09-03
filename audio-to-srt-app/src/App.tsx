@@ -47,7 +47,7 @@ function App() {
       const job: ConversionJob = {
         id: Date.now().toString() + Math.random().toString(36),
         fileName: file.name,
-        filePath: file.path || '',
+        filePath: (file as any).path || file.name,
         status: 'pending',
         progress: 'Queued'
       };
