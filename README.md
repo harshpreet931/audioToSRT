@@ -6,8 +6,8 @@
   **The fastest way to generate subtitles from audio files.**  
   Built for creators who value speed and simplicity.
   
-  ![GitHub stars](https://img.shields.io/github/stars/yourusername/audio-to-srt?style=social)
-  ![GitHub release](https://img.shields.io/github/release/yourusername/audio-to-srt.svg)
+  ![GitHub stars](https://img.shields.io/github/stars/harshpreet931/audioToSRT?style=social)
+  ![GitHub release](https://img.shields.io/github/release/harshpreet931/audioToSRT.svg)
   ![Platform support](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-blue)
   ![License](https://img.shields.io/badge/license-MIT-green)
 </div>
@@ -54,8 +54,8 @@ A native desktop application that converts audio files into perfectly formatted 
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/audio-to-srt.git
-cd audio-to-srt
+git clone https://github.com/harshpreet931/audioToSRT.git
+cd audioToSRT
 
 # Setup Python environment
 python3 -m venv venv
@@ -110,8 +110,8 @@ Generated SRT files work seamlessly with DaVinci Resolve:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/audio-to-srt.git
-cd audio-to-srt/audio-to-srt-app
+git clone https://github.com/harshpreet931/audioToSRT.git
+cd audioToSRT/audio-to-srt-app
 
 # Install dependencies
 npm install
@@ -215,9 +215,9 @@ MIT License - Use freely in personal and commercial projects.
 
 ## Support
 
-- **Documentation**: [Wiki](https://github.com/yourusername/audio-to-srt/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/audio-to-srt/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/audio-to-srt/discussions)
+- **Documentation**: [Wiki](https://github.com/harshpreet931/audioToSRT/wiki)
+- **Issues**: [GitHub Issues](https://github.com/harshpreet931/audioToSRT/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/harshpreet931/audioToSRT/discussions)
 
 ---
 
